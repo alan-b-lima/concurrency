@@ -12,7 +12,7 @@ Habituar o estudante à prática da programação concorrente em seus múltiplos
 
 ## Ementa
 
-Conceituação dos fundamentos concorrência: multiprogramação e paralelismo; recursos compartilhados, exclusão mútua e regiões críticas; e coordenação de processos. Estilos de concorrência: Multithreading; Orientado a Eventos; e Comunicação de Processos Sequenciais. Assim com uso prático de concorrência em programação de sistemas em múltiplas linguagens de programação, abordadas com diferentes graus de profundida, C; Java; Erlang; JavaScript; e Go.
+Conceituação dos fundamentos concorrência: multiprogramação e paralelismo; recursos compartilhados, exclusão mútua e regiões críticas; e comunicação e coordenação de processos. Estilos de concorrência: Multithreading; Modelo de Atores; Orientação a Eventos; e Comunicação de Processos Sequenciais. Assim com uso prático de concorrência em programação de sistemas em múltiplas linguagens de programação, abordadas com diferentes graus de profundida, C; Java; Erlang; JavaScript; e Go.
 
 <!-- ## Bibliografia
 
