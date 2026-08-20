@@ -4,19 +4,19 @@ const ThemeClass = {
 }
 
 const ThemeText = {
-    "light": "[Dark]",
-    "dark": "[Light]",
+    "light": "[Light]",
+    "dark": "[Dark]",
 }
 
 function main() {
-    const button = document.querySelector("#theme")
-    if (button !== null) {
-        button.addEventListener("click", () => Listener(button))
-        button.textContent = ThemeText[CurrentTheme()]
+    const theme = document.querySelector("#theme")
+    if (theme !== null) {
+        theme.addEventListener("click", () => ThemeHandler(theme))
+        theme.textContent = ThemeText[CurrentTheme()]
     }
 }
 
-function Listener(element) {
+function ThemeHandler(element) {
     const html = document.documentElement
     const theme = SwapTheme()
 
