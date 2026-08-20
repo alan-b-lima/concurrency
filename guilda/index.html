@@ -4,68 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./styles/index.css">
     <script src="./scripts/theme.js"></script>
 
     <title>Introdução a Programação Concorrente</title>
 </head>
 
-<body class="root">
-    <header class="root__header double-box titled-box">
-        <h1 class="header__title titled-box__title">Introdução a Programação Concorrente
-        </h1>
+<body>
+    <div class="root double-box titled-box">
+        <h1 class="root__title titled-box__title"><a href="./">Introdução a Programação Concorrente</a></h1>
 
-        <div class="header">
-            <h2 class="header__author">Alan Barbosa Lima</h2>
-
-            <nav class="header__navbar">
-                <button id="theme" class="theme">[Light]</button>
+        <header class="root__header thin-box titled-box">
+            <nav class="root__header__navbar navbar">
+                <a href="./index.html" class="navbar__anchor --selected" role="menuitem">Sobre o curso</a>
+                <a href="./planning.html" class="navbar__anchor" role="menuitem">Plano de Ensino</a>
+                <a href="./classes.html" class="navbar__anchor" role="menuitem">Aulas</a>
+                <a href="./license.html" class="navbar__anchor" role="menuitem">Delicença</a>
+                <a href="./references.html" class="navbar__anchor" role="menuitem">Referências</a>
             </nav>
-        </div>
-    </header>
 
-    <aside class="root__sidebar sidebar thin-box titled-box">
-        <h1 class="titled-box__title">Menu</h1>
+            <button id="theme" class="theme">[Light]</button>
+        </header>
 
-        <div class="sidebar__anchor-list" role="menu">
-            <a href="./index.html" class="sidebar__anchor --selected" role="menuitem">Sobre o curso</a>
-            <a href="./ementa.html" class="sidebar__anchor" role="menuitem">Plano de Ensino</a>
-            <a href="./aulas.html" class="sidebar__anchor" role="menuitem">Aulas</a>
-            <a href="./bibliografia.html" class="sidebar__anchor" role="menuitem">Referências</a>
-        </div>
-    </aside>
+        <main class="root__main">
+            <div class="root__main__container thin-box titled-box">
+                <h1 class="titled-box__title">Sobre o curso</h1>
 
-    <main class="root__main thin-box titled-box">
-        <h1 class="titled-box__title">Sobre o curso</h1>
+                <div class="root__main__content">
+                    <div class="prose">
+                        <p>
+                            A guilda <em>Introdução a Programação Concorrente</em> tem como objetivo introduzir o estudante à prática da programação concorrente em seus múltiplos estilos, assim como habilitar este para o uso desse conhecimento no desenvolvimento de aplicações concorrentes de uso geral.
+                        </p>
 
-        <div class="root__container">
-            <div class="root__content prose">
-                <p>
-                    Este projeto foi concebido em conjunto com os alunos da <a href="https://www.instagram.com/bytebuilders.ufvjm/">Liga Byte Builders</a> do curso de <a href="https://www.decom.ufvjm.edu.br/dc2020/?page_id=1018">Sistemas de Informação na UFVJM</a>.
-                </p>
+                        <p>
+                            Este projeto foi concebido em conjunto com os alunos da <a href="https://www.instagram.com/bytebuilders.ufvjm/">Liga Byte Builders</a> do curso de <a href="https://www.decom.ufvjm.edu.br/dc2020/?page_id=1018">Sistemas de Informação na UFVJM</a>.
+                        </p>
 
-                <p>
-                    A guilda <em>Introdução a Programação Concorrente</em> tem como objetivo introduzir o estudante à prática da programação concorrente em seus múltiplos estilos, assim como habilitar este para o uso desse conhecimento no desenvolvimento de aplicações concorrentes de uso geral.
-                </p>
+                        <p>
+                            A guilda aborda, quatro estilos de programação concorrente, juntamente com prática em ao menos uma linguagem de programação que implementa esse modelo em primeira classe:
+                        </p>
 
-                <p>
-                    A guilda aborda, quatro estilos de programação concorrente, juntamente com prática em ao menos uma linguagem de programação que implementa esse modelo em primeira classe:
-                </p>
+                        <ul>
+                            <li>Multithreading em <a href="https://www.java.com" target="_blank" rel="noopener noreferrer">Java</a>, com exemplos em <a href="https://www.c-language.org" target="_blank" rel="noopener noreferrer">C</a> e <a href="https://www.cs.virginia.edu/~evans/cs216/guides/x86.html" target="_blank" rel="noopener noreferrer">Assembly x86</a></li>
 
-                <ul>
-                    <li>Multithreading em <a href="https://www.java.com">Java</a>, com exemplos em <a href="https://www.c-language.org">C</a> e <a href="https://www.cs.virginia.edu/~evans/cs216/guides/x86.html">Assembly x86</a></li>
-                    <li>Modelo de Atores em <a href="https://www.erlang.org">Erlang</a></li>
-                    <li>Orientação a Eventos em <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
-                    <li>Comunicação de Processos Sequenciais em <a href="https://go.dev">Go</a></li>
-                </ul>
+                            <li>Modelo de Atores em <a href="https://www.erlang.org" target="_blank" rel="noopener noreferrer">Erlang</a></li>
 
-                <p>
-                    As aulas são ministradas presencialmente, às quintas-feiras, das 16h às 17h, no Laboratório 31 do Departamento de Computação na UFVJM. A guilda vai de 27 de agosto até 26 de novembro, com pausa em 22 de outubro para o SINTEGRA.
-                </p>
+                            <li>Orientação a Eventos em <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">JavaScript</a></li>
+
+                            <li>Comunicação de Processos Sequenciais em <a href="https://go.dev" target="_blank" rel="noopener noreferrer">Go</a></li>
+                        </ul>
+
+                        <p>
+                            As aulas são ministradas presencialmente, às quintas-feiras, das 16h às 17h, no Laboratório 31 do Departamento de Computação na UFVJM. A guilda vai de 27 de agosto até 26 de novembro, com pausa em 22 de outubro para o SINTEGRA.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
+
+        <footer class="root__footer footer thin-box titled-box">
+            <p>Livre de direitos autorais, Alan Lima &ndash; Dedicado ao <a href="https://unlicense.org" target="_blank" rel="noopener noreferrer">Domínio Público</a>.</p>
+        </footer>
+    </div>
 </body>
 
 </html>
