@@ -82,6 +82,5 @@ public class Main {
         int offsetY = 1 + height / 2 - (game.getHeight() / 2 + 2) / 2;
 
         System.out.printf("\033[%d;%dH%s", offsetY, offsetX, game.toString());
-        System.out.printf("\033[%d;1H%c", height + 1, io.lastInput());
     }
 }
