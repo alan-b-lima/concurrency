@@ -96,7 +96,7 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-.root__title:is(:hover, :focus-visible) {
+.root__title:is(:hover, :focus-visible,:active) {
     background-color: var(--color-foreground);
     color: var(--color-background);
 }
@@ -229,13 +229,13 @@ body {
     list-style-position: inside;
 }
 
+.prose ul li::marker {
+    content: "- ";
+}
+
 .prose li {
     text-indent: calc(4 * var(--char-width));
     text-align: left;
-}
-
-.prose li::marker {
-    content: "- ";
 }
 
 .prose li:nth-last-child(n + 3):after {
@@ -250,20 +250,20 @@ body {
     content: ".";
 }
 
-.prose a {
+.prose .anchor {
     text-decoration: underline;
 }
 
-.prose a:is(:hover, :focus-visible) {
+.prose .anchor:is(:hover, :focus-visible) {
     font-style: italic;
     font-weight: bold;
 }
 
-.footer a {
+.footer .anchor {
     text-decoration: underline;
 }
 
-.footer a:is(:hover, :focus-visible) {
+.footer .anchor:is(:hover, :focus-visible) {
     font-style: italic;
     font-weight: bold;
 }
