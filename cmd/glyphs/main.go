@@ -1,12 +1,14 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"io"
 	"os"
 	"strings"
 	"unsafe"
 
+	"golang.design/x/clipboard"
 	"golang.org/x/term"
 	"golang.org/x/text/transform"
 	"golang.org/x/text/unicode/norm"
@@ -55,6 +57,10 @@ func Main(args ...string) error {
 
 		m = strings.TrimSuffix(m, "\n")
 		fmt.Println(m)
+
+		if clipboard.Init() == nil {
+			clipboard.Write(context.Background(), clipboard.FmtText, []byte(m))
+		}
 
 	default:
 		return fmt.Errorf("unknown command %q\n", cmd)
