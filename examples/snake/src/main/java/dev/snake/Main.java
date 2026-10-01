@@ -11,8 +11,18 @@ public class Main {
         IOControl io = new IOControl();
         Game game = new Game();
 
+        int width = 9;
+        int height = 10;
+
+        if (args.length >= 1) {
+            width = Integer.parseInt(args[0]);
+        }
+        if (args.length >= 2) {
+            height = Integer.parseInt(args[1]);
+        }
+
         game.setSeed(0);
-        game.start(9, 10, 3);
+        game.start(width, height, 3);
 
         Main.loop(io, game);
 
